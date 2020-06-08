@@ -1,0 +1,182 @@
+body {
+  /* margin: 0; */
+  padding: 0;
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+
+  font-size: 1.5rem;
+}
+
+
+
+.nav{
+  float: right;
+  display: block;
+}
+.nav a{
+  padding: 0 12px;
+  color: hsl(0, 0%, 100%);
+}
+
+.font{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.font, .font-mail{
+  padding: 30px 0 20px;
+}
+
+.intro {
+  background-color: hsl(217, 28%, 15%);
+  padding: 50px 40px 0;
+}
+
+.intro-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -10px;
+}
+
+.curvy-intro-img {
+  position: absolute;
+  top: 85%;
+  z-index: 1;
+  right: 5%;
+  left: 2px;
+}
+
+.intro-text {
+  text-align: center;
+  margin: auto;
+  width: 34%;
+  z-index: 2;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 80px;
+  grid-column-gap: 30px;
+} */
+.grid-style {
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.inter-midlle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+}
+
+button {
+  padding: 8px 25px;
+  background-color: hsl(198, 76%, 67%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+/* .intro-btn{
+  padding: 10px 40px;
+  color: hsl(0, 0%, 100%);
+} */
+.inter-midlle {
+  padding: 0 50px 30px;
+}
+
+#team {
+display: flex;
+justify-content: space-between;
+margin: 60px;
+}
+
+.team-content{
+  padding: 0 50px;
+}
+
+.team-link{
+  color: #65e2d9;
+}
+
+.footer-div {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 80px;
+}
+
+.location {
+  float: left;
+}
+
+.profile {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+  padding: 30px;
+  grid-column-gap: 0;
+  margin: 0 20px;
+}
+
+.feedback {
+  margin-left: 2rem;
+  padding-left: 5px;
+  line-height: 0.5rem;
+}
+
+.quotes {
+  margin-left: 65px;
+padding-top: 20px;
+  margin-bottom: -18px;
+}
+
+.card {
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+  text-align: center;
+  top: 6rem;
+  margin: auto;
+  width: 50%;
+}
+
+.early-access {
+  padding-top: 10px;
+}
+
+.text-area {
+  width: 60%;
+  padding: 8px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.textarea-div {
+  padding-bottom: 15px;
+}
+
+.float {
+  float: left;
+  border-radius: 100%;
+  height: 30px;
+}
+
+.callto-action {
+  width: 70%;
+margin: 20px 70px;
+}
