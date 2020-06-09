@@ -1,5 +1,11 @@
+
+html,body
+{
+    overflow-x: hidden;
+}
+
 body {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   background-color: hsl(218, 28%, 13%);
   color: hsl(0, 0%, 100%);
@@ -12,33 +18,30 @@ body {
 }
 
 h2 {
-
   font-size: 1.5rem;
 }
 
-
-
-.nav{
+.nav {
   float: right;
-  display: block;
 }
-.nav a{
+
+.nav a {
   padding: 0 12px;
   color: hsl(0, 0%, 100%);
 }
 
-.font{
+.font {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
 }
 
-.font, .font-mail{
+.font, .font-mail {
   padding: 30px 0 20px;
 }
 
-.intro {
+.intro, .top {
   background-color: hsl(217, 28%, 15%);
-  padding: 50px 40px 0;
+  padding: 50px 30px 0;
 }
 
 .intro-img {
@@ -48,11 +51,20 @@ h2 {
   top: -10px;
 }
 
-.curvy-intro-img {
+.curvy-desktop {
   position: absolute;
-  top: 85%;
+  top: 95%;
   z-index: 1;
-  right: 5%;
+  /* right: 5%; */
+  left: 2px;
+}
+
+.curvy-mobile{
+  display: none;
+  position: absolute;
+  top: 95%;
+  z-index: 1;
+  /* right: 5%; */
   left: 2px;
 }
 
@@ -62,7 +74,6 @@ h2 {
   width: 34%;
   z-index: 2;
   position: relative;
-  margin-top: 10px;
 }
 
 /* .grid-container {
@@ -77,17 +88,19 @@ h2 {
   padding: 20px;
 }
 
-.inter-midlle {
+/* .inter-midlle {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-column-gap: 20px;
-}
-
+} */
 button {
   padding: 8px 25px;
   background-color: hsl(198, 76%, 67%);
   color: hsl(0, 0%, 100%);
   border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 50%;
 }
 
 /* .intro-btn{
@@ -95,44 +108,107 @@ button {
   color: hsl(0, 0%, 100%);
 } */
 .inter-midlle {
-  padding: 0 50px 30px;
+  padding: 0 70px;
 }
 
 #team {
-display: flex;
-justify-content: space-between;
-margin: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
-.team-content{
+.team-content {
   padding: 0 50px;
 }
 
-.team-link{
+.team-link {
   color: #65e2d9;
 }
 
-.footer-div {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
+
 
 footer {
   background-color: hsl(216, 53%, 9%);
-  padding-top: 80px;
+  padding-top: 90px;
+  margin-top: 30px;
 }
 
+.flex-container {
+display: flex;
+flex-direction: row;
+padding-left: 60px;
+padding-top: 30px;
+}
+
+.location-div{
+width: 25%;
+float: left;
+}
+
+
+/* .location-text {
+  margin-left: 35px;
+} */
 .location {
   float: left;
 }
 
+.contact{
+padding-left: 50px;
+width: 25%;
+}
+
+.footer-text {
+  margin-left: 35px;
+}
+
+.bottom-link {
+padding-left: 50px;
+width: 15%;
+}
+
+.contact-bottom {
+padding-left: 50px;
+}
+
+.bottom-logo{
+  padding-left: 55px;
+}
+
+.social {
+padding-left: 60px;
+}
+i{
+  margin-top: 10px;
+  border-radius: 100%;
+border: 1px solid #fff;
+padding: 5px 10px;
+margin: 5px;
+color: #fff;
+font-size: 14px;
+}
+
+
 .profile {
   background-color: hsl(219, 30%, 18%);
   border-radius: 5px;
-  padding: 30px;
-  grid-column-gap: 0;
+  padding: 10px;
   margin: 0 20px;
+  transition: 0.5s;
 }
+
+.profile:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/* .profile1{
+  padding-left: -40px;
+}
+.profile3 {
+  padding-right: -40px;
+} */
 
 .feedback {
   margin-left: 2rem;
@@ -142,7 +218,7 @@ footer {
 
 .quotes {
   margin-left: 65px;
-padding-top: 20px;
+  padding-top: 20px;
   margin-bottom: -18px;
 }
 
@@ -161,11 +237,13 @@ padding-top: 20px;
 
 .text-area {
   width: 60%;
-  padding: 8px;
-  border-radius: 15px;
+  padding: 8px 20px;
+  border-radius: 30px;
   margin-right: 10px;
   margin-bottom: 15px;
+  background-color: #f3fbff;
 }
+
 .textarea-div {
   padding-bottom: 15px;
 }
@@ -178,5 +256,63 @@ padding-top: 20px;
 
 .callto-action {
   width: 70%;
-margin: 20px 70px;
+  margin: 20px 70px;
+}
+
+
+@media (max-width: 560px) {
+.logo {
+  height: 30px;
+}
+
+.top {
+  padding: 20px 30px 0;
+}
+
+.intro{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  .profile{
+    margin: 20px;
+  }
+  .intro-img{
+    width: 100%;
+  }
+  .curvy-desktop {
+display: none;
+  }
+
+  .curvy-mobile{
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  .intro-text {
+      width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .text-area, .button2 {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.early-access-text{
+  padding: 0 10px;
+}
+
+
+.callto-action {
+    margin: 20px 50px;
+}
+
+
+
 }

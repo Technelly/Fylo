@@ -25,9 +25,9 @@
 </head>
 
 <body>
-  <div class="top intro">
+  <div class="top">
     <div class="logo">
-  <img src="images/logo.svg" alt="">
+  <img src="images/logo.svg" class="logo" alt="">
   <div class="nav">
     <a href="#">Features</a>
     <a href="#">Team</a>
@@ -46,7 +46,8 @@
     you need, share and collaborate with <br> friends family, and co-workers.</p>
       <button type="button" name="button" class="intro-btn">Get Started</button>
 </div>
-<img src="images/bg-curvy-desktop.svg" class="curvy-intro-img" alt="">
+<img src="images/bg-curvy-desktop.svg" class="curvy-desktop" alt="">
+<img src="images/bg-curvy-mobile.svg" class="curvy-mobile" alt="">
 </div>
 </section>
 
@@ -115,8 +116,11 @@
 
 <section class="intermediate-midlle">
   <img src="images/bg-quotes.png" class="quotes" alt="">
-  <div class=" inter-midlle">
-    <div class="profile">
+  <div class=" inter-midlle container-fluid">
+    <div class="row">
+
+
+    <div class="profile profile1 col-sm">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
       become a well-oiled collaboration machine.</p>
       <img src="images/profile-1.jpg" class="float">
@@ -127,7 +131,7 @@
 
     </div>
 
-    <div class="profile">
+    <div class="profile profile12 col-sm">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
       become a well-oiled collaboration machine.</p>
       <img src="images/profile-2.jpg" class="float">
@@ -138,7 +142,7 @@
 
     </div>
 
-    <div class="profile">
+    <div class="profile profile3 col-sm">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
       become a well-oiled collaboration machine.</p>
       <img src="images/profile-3.jpg" class="float">
@@ -148,7 +152,7 @@
       </div>
 
     </div>
-
+</div>
   </div>
 
 </section>
@@ -157,13 +161,13 @@
 
 <div class="card">
   <div class="early-access">
-  <h1 class="font font-mail">Get early access today</h1>
-  <p>  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+  <h2 class="font font-mail">Get early access today</h2>
+  <p class="early-access-text">  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
     questions, our support team would be happy to help you.</p>
     </div>
     <div class="textarea-div">
-      <input type="text" class="text-area"  placeholder="email@example.com">
-      <button type="submit" name="button">Get Started For Free</button>
+      <input type="text" class=" pd text-area"  placeholder="email@example.com">
+      <button type="submit" name="button" class="button2">Get Started For Free</button>
     </div>
 </div>
 
@@ -173,21 +177,29 @@
       <img src="images/logo.svg" alt="">
     </div>
 
-    <div class="footer-div">
-      <div class="location-div">
-        <img src="images/icon-location.svg" class="location"alt="">
+    <div class="footer-content flex-container">
 
-        <p >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua
-        </p>
+  <div class="location-div">
+        <img src="images/icon-location.svg" class="location"alt="">
+        <div class="footer-text">
+          <p >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua
+          </p>
+        </div>
       </div>
 
       <div class="contact">
         <img src="images/icon-phone.svg" class="location" alt="">
-        <p>+1-543-123-4567</p>
-        <img src="images/icon-email.svg" class="location" alt="">
-        <p>example@fylo.com</p>
+          <div class="footer-text">
+          <p>+1-543-123-4567</p>
+          </div>
+          <img src="images/icon-email.svg" class="location" alt="">
+          <div class="footer-text">
+            <p>example@fylo.com</p>
+          </div>
+
+
       </div>
 
       <div class="bottom-link">
@@ -198,15 +210,20 @@
       </div>
 
       <div class="contact-bottom">
-
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
       </div>
-      <p>Contact Us</p>
-      <p>Terms</p>
-      <p>Privacy</p>
+
+    <div class="social">
+      <a href="https://www.facebook.com/Sidoo3"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+<a href="https://twitter.com/SAMUEL__ABAH"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com/samuel__abah/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    </div>
     </div>
 
-
   </footer>
+  <script src="https://kit.fontawesome.com/a4100ca161.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
