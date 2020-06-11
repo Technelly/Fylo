@@ -21,7 +21,7 @@ body {
 display: none;
 }
 
-span {
+.copyright {
   padding-left: 60px;
   color: #57595a;
 }
@@ -309,6 +309,7 @@ font-size: 14px;
   display: block;
 }
 
+
 .team-content-text {
   padding: 0 50px;
 }
@@ -383,14 +384,11 @@ width: 100%;
   text-align: center;
 }
 
-<<<<<<< HEAD
 .copyright {
   text-align: center;
   padding-right: 30px;
 }
 
-=======
->>>>>>> parent of ca1273a... final adjustment to fylo copyright
 .bottom-logo {
     padding-left: 40px;
 }
@@ -403,6 +401,6 @@ width: 100%;
 
 @media  (max-width: 360px) {
   .curvy-mobile {
-    top:91%;
+    top:99%;
   }
 }
