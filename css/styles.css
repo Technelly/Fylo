@@ -17,8 +17,8 @@ body {
   box-sizing: border-box;
 }
 
-h2 {
-  font-size: 1.5rem;
+.visually-hidden {
+display: none;
 }
 
 .copyright {
@@ -182,7 +182,7 @@ font-size: 14px;
 .profile {
   background-color: hsl(219, 30%, 18%);
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 25px;
   margin: 0 20px;
   transition: 0.5s;
 }
@@ -385,7 +385,7 @@ width: 100%;
 
 .copyright {
   text-align: center;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .bottom-logo {
