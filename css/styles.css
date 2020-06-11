@@ -97,9 +97,6 @@ button {
   margin-top: 30px;
 
 }
- .button1 {
-  width: 50%;
-}
 
 
 #team {
@@ -239,6 +236,54 @@ font-size: 14px;
   margin: 20px 70px;
 }
 
+@media (max-width: 991px) {
+  .curvy-desktop {
+    width: 100%;
+    top: 78%;
+}
+
+.team-content-text {
+  padding-right: 20px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+  .intro-text {
+      width: 60%;
+
+  }
+
+  .curvy-desktop {
+    width: 100%;
+    top: 65%;
+}
+.row {
+  padding-top: 30px;
+}
+.stay-productive {
+  width: 100%;
+}
+
+.team-content-text {
+  padding-right: 20px;
+}
+
+.feedback {
+    line-height: 1rem;
+}
+
+.quotes {
+    margin-bottom: -40px;
+}
+
+.card {
+    width: 80%;
+}
+
+}
+
 
 @media (max-width: 560px) {
 .logo {
@@ -281,7 +326,7 @@ display: none;
   .curvy-mobile{
     display: inline-block;
     width: 100%;
-
+  top: 91%
   }
 
   .intro-text {
@@ -336,40 +381,14 @@ width: 100%;
     padding-left: 40px;
 }
 
+.button1 {
+ width: 60%;
 }
 
-@media (max-width: 768px) {
+}
 
-  .intro-text {
-      width: 60%;
-
+@media  (max-width: 360px) {
+  .curvy-mobile {
+    top:91%;
   }
-
-  .curvy-desktop {
-    top: 126%;
-    width: 100%;
-}
-.row {
-  padding-top: 30px;
-}
-.stay-productive {
-  width: 100%;
-}
-
-.team-content-text {
-  padding-right: 20px;
-}
-
-.feedback {
-    line-height: 1rem;
-}
-
-.quotes {
-    margin-bottom: -40px;
-}
-
-.card {
-    width: 80%;
-}
-
 }
