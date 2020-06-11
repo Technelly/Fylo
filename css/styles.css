@@ -21,6 +21,11 @@ h2 {
   font-size: 1.5rem;
 }
 
+span {
+  padding-left: 60px;
+  color: #57595a;
+}
+
 /* navbar styles */
 .nav {
   float: right;
@@ -118,6 +123,7 @@ button {
 footer {
   background-color: hsl(216, 53%, 9%);
   padding-top: 90px;
+  padding-bottom: 20px;
   margin-top: 30px;
 }
 
